@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    {% block content %}
+    <h1>dorra</h1>
+    <h3>name={{name|capfirst}}</h3> 
+    <h3>age={{age|filesizeformat}}</h3>
+    {% for x in name %}
+    <p>
+        {{x}}
+    </p>
+    {% endfor %}
+    {% endblock content %}
+    
+</body>
+</html>

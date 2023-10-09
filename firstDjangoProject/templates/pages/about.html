@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+
+    <h1>django</h1>
+    {% if name == 'dorra' %}
+    <h1>
+        bata
+    </h1>
+    {% elif name == 'mootez' %}
+    <h1>
+        warde
+    </h1>
+    
+    {% else %}
+    <p>
+        not found
+    </p>
+
+    {% endif %}
+
+
+    {% endblock content %}
+</body>
+</html>
